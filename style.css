@@ -1,0 +1,243 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* .nav h1 {
+  padding: 10px;
+} */
+.nav {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  width: 100%;
+}
+.nav-elements {
+  display: flex;
+  column-gap: 20px;
+  right: 10px;
+
+  text-align: center;
+}
+.nav-elements a {
+  color: #1d232c;
+  text-decoration: none;
+}
+.nav-elements a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.nav-menutoggle {
+  display: none;
+}
+.sidebar {
+  width: 50%;
+  height: 100%;
+  background-color: #1d232c;
+  position: fixed;
+  top: 0;
+  left: -60%;
+  padding: 30px;
+  color: white;
+
+  transition: 0.2s;
+}
+
+.sidebar-element {
+  margin-bottom: 30px;
+}
+.sidebar-elements a {
+  text-decoration: none;
+  color: white;
+}
+
+/* header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  gap: 50px;
+}
+.shopButton {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #1d232c;
+  color: white;
+  margin-top: 10px;
+}
+.service {
+  padding: 20px;
+}
+.serviceContainer-1 {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.serviceContainer-2 {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.serviceContainer-2 div {
+  background-color: #f2f4f7;
+  border-radius: 5px;
+  padding: 10px;
+}
+.newArrival {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.newArrivalContainer {
+  flex-basis: 20%;
+  position: relative;
+}
+.newArrival button {
+  background-color: #f2f4f7;
+  color: #1d232c;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-radius: 10px;
+  position: absolute;
+  left: 10%;
+  top: 60%;
+  border: none;
+}
+.newArrival button:hover {
+  cursor: pointer;
+}
+.newsLetter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inputBox {
+  width: 80vmax;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px;
+  border-color: black;
+  border: solid;
+}
+.newsLetter button {
+  padding: 10px;
+  background-color: #1d232c;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.footer {
+  margin-top: 10px;
+  background-color: #1d232c;
+  color: white;
+  padding: 50px;
+}
+.productSection {
+  margin-top: 20px;
+}
+.productSearch {
+  width: 80%;
+  border: 2px;
+  border-color: black;
+  border: solid;
+  display: flex;
+  border-radius: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  margin: auto;
+}
+.productSearch input {
+  border: none;
+  width: 100%;
+  background-color: none;
+}
+.productSearch input:focus {
+  outline: none;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-around;
+}
+.productBox {
+  flex-basis: 20%;
+  text-align: center;
+}
+.productBox img {
+  border-radius: 10px;
+}
+.contact {
+  margin: 10px;
+}
+.contactContainer {
+  padding: 10px;
+  background-color: #1d232c;
+  justify-content: space-around;
+  width: 70%;
+  height: 100%;
+  display: block;
+  border-radius: 10px;
+  align-items: left;
+  color: white;
+  margin: 10px;
+  padding: 50px;
+  position: relative;
+  left: 10%;
+}
+.contents input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.contents textarea {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+}
+.contents input:focus {
+  outline: none;
+}
+.contents textarea:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-menutoggle {
+    display: block;
+  }
+  .nav-elements {
+    display: none;
+  }
+  .headerimage {
+    display: none;
+  }
+  .serviceContainer-2 {
+    flex-direction: column;
+  }
+}
